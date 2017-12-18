@@ -1,4 +1,3 @@
-
 #path to ChromHMM
 #
 ch_home="ChromHMM_v1.12/"
