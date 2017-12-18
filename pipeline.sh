@@ -16,10 +16,10 @@ mv *.bam "$data_home"
 #
 ./pipeline.binarize.sh
 
-## learn the models [2-24 states]
+## learn models [2-24 states]
 #
 ./pipeline.learn.sh
 
-## segment the 15-states models
+## segment the genome according to a 15-states model
 #
 ./pipeline.model-15-states.sh
