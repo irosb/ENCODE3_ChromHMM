@@ -5,5 +5,5 @@
 3. Run pipeline.download.sh
 4. Run pipeline.binarize.sh (editing needed depending on the job scheduler)
 5. Run pipeline.learn.sh (editing needed depending on the job scheduler)
-6. pipeline.model-15-states.1.sh
-7. pipeline.model-15-states.2.sh
+6. Run pipeline.model-15-states.1.sh (editing needed depending on the job scheduler)
+7. Run pipeline.model-15-states.2.sh (editing needed depending on the job scheduler)
