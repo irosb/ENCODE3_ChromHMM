@@ -1,5 +1,9 @@
 #!/bin/bash
 
+## learn models [2-24 states]
+
+source pipeline.header.sh
+
 mkdir models/
 for prefix in $(ls metadata.*.txt | sed 's/metadata.//g' | sed 's/.txt//g');
 do

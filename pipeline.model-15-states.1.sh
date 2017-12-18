@@ -1,5 +1,9 @@
 #!/bin/bash
 
+## segment the genome according to a 15-states model
+
+source pipeline.header.sh
+
 mkdir segmentations/
 export _JAVA_OPTIONS="-Xmx4G"
 for prefix in $(ls metadata.*.txt | sed 's/metadata.//g' | sed 's/.txt//g');

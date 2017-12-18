@@ -1,5 +1,11 @@
 #!/bin/bash
 
+## download and rename the bam files from the ENCODE DCC
+
+source pipeline.header.sh
+
+mkdir "$data_home"
+
 curl -L https://www.encodeproject.org/files/ENCFF689YLF/@@download/ENCFF689YLF.bam -o e10.5_forebrain_control_Rep2.bam
 curl -L https://www.encodeproject.org/files/ENCFF778IFH/@@download/ENCFF778IFH.bam -o e10.5_forebrain_control_Rep1.bam
 curl -L https://www.encodeproject.org/files/ENCFF018UFV/@@download/ENCFF018UFV.bam -o e10.5_forebrain_H3K27me3_Rep2.bam
@@ -1272,3 +1278,5 @@ curl -L https://www.encodeproject.org/files/ENCFF594ZJA/@@download/ENCFF594ZJA.b
 curl -L https://www.encodeproject.org/files/ENCFF654AEW/@@download/ENCFF654AEW.bam -o P0_intestine_H3K9ac_Rep1.bam
 curl -L https://www.encodeproject.org/files/ENCFF181RKA/@@download/ENCFF181RKA.bam -o P0_intestine_H3K9me3_Rep2.bam
 curl -L https://www.encodeproject.org/files/ENCFF670MJB/@@download/ENCFF670MJB.bam -o P0_intestine_H3K9me3_Rep1.bam
+
+mv *.bam "$data_home"

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+## binarize bam files
+
+source pipeline.header.sh
+
 mkdir binaries/
 for prefix in $(ls metadata.*.txt | sed 's/metadata.//g' | sed 's/.txt//g');
 do
