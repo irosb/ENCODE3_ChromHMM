@@ -10,7 +10,7 @@ This code generates the chromatin states calls for a time course across twelve t
 6. Run pipeline.model-15-states.1.sh (editing needed depending on the job scheduler)
 7. Run pipeline.model-15-states.2.sh (editing needed depending on the job scheduler)
 
-#### Reference
+## Reference
 
 **Systematic mapping of chromatin state landscapes during mouse development**
 
